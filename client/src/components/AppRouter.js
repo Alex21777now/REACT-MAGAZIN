@@ -19,18 +19,19 @@ const AppRouter = () => {
     return (
       
         <Routes>
-         { /* {isAuth && authRoutes.map(({path, element}) =>
+          {isAuth && authRoutes.map(({path, element}) =>
                 <Route key={path} path={path} element={element}/>
             )}
-            {publicRoutes.map(({path, Element}) =>
+            {publicRoutes.map(({path, element}) =>
                 <Route key={path} path={path} element={element}/>
-            )}    */}
-            <Route path={ADMIN_ROUTE} element={<Admin />} />
+            )}  
+              
+        { /*    <Route path={ADMIN_ROUTE} element={<Admin />} />
             <Route path={BASKET_ROUTE} element={<Basket />} />
             <Route path={SHOP_ROUTE} element={<Shop />} />
             <Route path={LOGIN_ROUTE} element={<Auth />} />
             <Route path={REGISTRATION_ROUTE} element={<Auth />} />
-            <Route path={DEVICE_ROUTE} element={<DevicePage />} />
+            <Route path={DEVICE_ROUTE} element={<DevicePage />} />   */}
         </Routes>
         
         
